@@ -1,0 +1,3 @@
+        date          |             Harga emas 50 gr      | Harga emas 100 gr  
+| Wed Sep 21 23:17:43 WIB 2016    | 568.500 | 566.500  
+  

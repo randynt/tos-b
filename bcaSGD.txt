@@ -1,0 +1,2 @@
+tanggal/jam | harga jual | harga beli 
+Thu Sep 22 00:00:54 WIB 2016      | 9657.38  | 9637.38 

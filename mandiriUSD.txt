@@ -1,0 +1,2 @@
+tanggal/jam | harga jual | harga beli \n
+ Wed Sep 21 23:59:22 WIB 2016            | 13.155,00 | 13.125,00 
