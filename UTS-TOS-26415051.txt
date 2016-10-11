@@ -1,0 +1,26 @@
+#/bin/bash
+uts=`curl  http://www.elevenia.co.id/prd-apple-iphone-7-plus-black-128gb-garansi-6242166 | grep Harga -A2 | cut -d ">" -f2 | cut -d "<" -f1 | xargs | cut -d " " -f8 `
+uts2=`curl  http://www.elevenia.co.id/prd-apple-iphone-7-plus-black-128gb-garansi-6242166 | grep Harga -A2 | cut -d ">" -f2 | cut -d "<" -f1 | xargs | cut -d " " -f8|cut -d "." -f1 `
+if (($uts2 < 15))
+then
+ mail -s "Iphone" m26415051@john.petra.ac.id < uts1_iphone.txt
+fi
+
+echo $uts >> uts1_iphone.txt
+
+
+
+crontab nya 
+0 7,19 * * 1-5 sh /home/m26415051/UTS1.sh
+
+
+
+NO2:
+
+#/bin/bash
+
+asn= `curl http://stats.labs.apnic.net/ipv6/ID | grep AS[1-9]| cut -d ">" -f2 | cut -d "<" -f1`
+pt= `curl http://stats.labs.apnic.net/ipv6/ID | grep AS[1-9]| cut -d "," -f2`
+
+
+echo $asn,$pt >>data.csv
